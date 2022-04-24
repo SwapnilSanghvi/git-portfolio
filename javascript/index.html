@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../cheatsheet/prism.css" />
+    <link rel="stylesheet" href="../cheatsheet/style.css" />
+    <title>JavaScript Cheatsheet by Swapnil</title>
+</head>
+
+<body>
+    <nav>
+        <h1 class="center">Js Cheatsheet By Swapnil Sanghvi</h1>
+        <!-- <div class="content center">
+            Js Cheatsheet By Swapnil Sanghvi
+        </div> -->
+    </nav>
+    <div class="container">
+        <ol>
+            <!-- Internal -->
+            <h3>Internal Javascript</h3>
+            <pre class="language-html"><code>&lt;script type="text/javascript"&gt; //JS code goes here &lt;/script&gt;
+</code></pre>
+
+            <!-- External Js -->
+            <h3>External Javascript</h3>
+            <pre class="language-html"><code>&lt;script src="filename.js"&gt;&lt;/script&gt;</code></pre>
+
+            <!-- JS Developer Console -->
+            <h3>Javascript Developer Console</h3>
+            <pre class="language-js"><code>Browser-->Right Click-->Inspect-->Console
+trl+Shift+j (Windows)
+Cmd+Option+j (Mac)</code></pre>
+            <!-- Clear JS Developer Console -->
+            <h3>Clear Javascript Developer Console</h3>
+            <pre class="language-js"><code>To clear console we have to use clear() function.
+Ctrl+l (Mac)</code></pre>
+
+            <!-- JS Data Type  -->
+            <h3>Data Type : Number</h3>
+            <pre class="language-js"><code>var x= 10
+var x= 10.2
+var x= -10</code></pre>
+
+            <h3>Data Type : String</h3>
+            <pre class="language-js"><code>var name="Swapnil"
+var name='Swapnil Sanghvi'</code></pre>
+
+            <h3>Data Type : Boolean</h3>
+            <pre class="language-js"><code>var married = true
+var myName = false</code></pre>
+
+            <h3>Data Type : Undefined</h3>
+            <pre class="language-js"><code>var x;</code></pre>
+
+            <h3>Data Type : Null</h3>
+            <pre class="language-js"><code>var x = null</code></pre>
+
+
+            <!-- JS String Property  -->
+
+            <h3>Concatenation Operators</h3>
+            <pre class="language-js"><code>// Concatenation Operator
+var numbers=[10,20,30,40]
+numbers[0]=777
+console.log(numbers)//[777,20,30,40]y'Swapnil' + "Sanghvi" = SwapnilSanghvi]</code></pre>
+
+            <h3>Spacing</h3>
+            <pre class="language-js"><code>// Next Line
+var name='Swapnil\nSanghvi'
+console.log(namex)
+
+// Space
+var name='Swapnil\tSanghvi'
+console.log(namex)</code></pre>
+
+            <h3>Find Length of String</h3>
+            <pre class="language-js"><code>var x='lets find length of string in js'
+x.length</code></pre>
+
+            <h3>Access character of String</h3>
+            <pre class="language-js"><code>var name='Swapnil Sanghvi'
+name[0]</code></pre>
+
+            <!-- JS Variable  -->
+            <h3>Variable :Variables are containers to store values.</h3>
+            <pre class="language-js"><code>//Syntax:
+var variableName=variableValue
+var name="Swapnil"
+
+//variable naming convention
+studentMobileNumber---->camel case(java|Javascript)
+student_mobile_number-->snake case(Python)
+student-mobile-number-->Kebab Case(LISP)
+</code></pre>
+
+            <!-- JS Methods  -->
+            <h3>alert() : To display alerts to the end user.</h3>
+            <pre class="language-js"><code>alert('I am Swapnil Sanghvi')</code></pre>
+
+            <h3>console.log() :To print messages to the developers console</h3>
+            <pre class="language-js"><code>var name='Swapnil Sanghvi'
+console.log(name)</code></pre>
+
+            <h3>prompt() : To get input from the end user</h3>
+            <pre class="language-js"><code>var userName= prompt('Enter Your Name')
+alert('You are'+userName)</code></pre>
+
+            <!-- JS Operators  -->
+            <h3>Arithmetic Operators: +,-,*,/,%,**</h3>
+            <pre class="language-js"><code> 2+2 = 4
+ 2-2 = 0
+ 2/2 = 1
+ 2*4 = 8</code></pre>
+
+            <h3>Comparison Opprators: <,<=,>,>=,==,!=, ===</h3>
+            <pre class="language-js"><code> 10>20     //false
+ 10>=20    //false
+ 10<=20    //true
+ 10<20     //true
+ 10!=20    //true
+ 10==10.0  //true
+ 10==='10' //false</code></pre>
+
+            <h3>Logical Operators: && --> AND, || --> OR, ! --> NOT</h3>
+            <pre class="language-js"><code> (1<2)&&(2<3) //true
+ (1<2)||(2<3) //true
+ 1 != 2       //true</code></pre>
+
+            <!-- Conditional Statements  -->
+            <h3>If Statement</h3>
+            <pre class="language-js"><code>if (condition) {
+    // block of code to be executed if the condition is true
+}</code></pre>
+
+            <h3>If-Else Statement</h3>
+            <pre class="language-js"><code>if (condition) {
+    // block of code to be executed if the condition is true
+} else {
+    // block of code to be executed if the condition is false
+}</code></pre>
+
+            <h3>Else-If Statement</h3>
+            <pre class="language-js"><code>if (condition1) {
+    // block of code to be executed if condition1 is true
+} else if (condition2) {
+    // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+    // block of code to be executed if the condition1 is false and condition2 is false
+}</code></pre>
+            <!-- Iterative Statements  -->
+            <h3>While Loop Statement : as long as some condition is true, then we should go for while loop.</h3>
+            <pre class="language-js"><code>while(condition){
+body }</code></pre>
+
+            <h3>For Loop Statment : If we know number of iterations in advance then we should go use for loop.</h3>
+            <pre class="language-js"><code>for(initialization_section;conditional_check;increment_decrement_section){
+body }</code></pre>
+
+            <!-- Function  -->
+            <h3>Function : A JavaScript function is a block of code designed to perform a particular task.</h3>
+            <pre class="language-js"><code>function functionName(){
+body}
+functionName()</code></pre>
+
+
+            <h3>Function with Default Argument : We can provide default values for arguments. If we are not passing any
+                value then only default values will be considered..</h3>
+            <pre class="language-js"><code>function functionName(arguemnts){
+body}
+functionName()</code></pre>
+
+            <h3>Function with Arguments : A function can accept any number of arguments and these are inputs to the
+                function.</h3>
+            <pre class="language-js"><code>function functionName(arguemnt1){
+body}
+functionName(arguemnts2)</code></pre>
+
+            <h3>Function with Return Value : A function can return values also.</h3>
+            <pre class="language-js"><code>function functionName(arguments){
+body
+return value}</code></pre>
+
+            <!-- Javascript Scope  -->
+            <h3>Global Scope : The variables are which are declared outside of function are having global scope and
+                available for all functions.</h3>
+            <pre class="language-js"><code>var x = 1 //Global variable function
+function f1(){
+console.log(x) }
+
+function f2(){
+console.log(x)
+}</code></pre>
+
+            <h3>Local Scope : The variables are which are declared inside function are having local scope and available
+                only for that function..</h3>
+            <pre class="language-js"><code>function f1(){
+x=10 // Local Variable
+console.log(x) }</code></pre>
+
+            <h3>Higher Order functions: The functions which can take another function as argument, such type of special
+                functions are called higher order functions.</h3>
+            <pre class="language-js"><code>function singAsong(){
+console.log('I Love You')
+}
+setInterval(singAsong,1000)</code></pre>
+
+            <h3>Anonymous Function : Some times we can define a function without name, such type of nameless functions
+                are called
+                anonymous functions. The main objective of anonymous functions is just for instant use (one time usage).
+            </h3>
+            <pre class="language-js"><code>setInterval(function(){console.log('I Love You')},1000)</code></pre>
+
+            <h3>setInterval() method. : The provided function will be executed continously for every specified time. We
+                can stop this execution by using clearInterval() function.</h3>
+            <pre class="language-js"><code>setInterval(function, time_in_milliseconds)</code></pre>
+
+            <!-- Javascript Array  -->
+            <h3>JavaScript Arrays : An array is an indexed collection of elements.</h3>
+            <pre class="language-js"><code>var friends = ['ramesh','mahesh','suresh']</code></pre>
+
+            <!-- Multi dimensional Arraysy. -->
+            <h3>Multi dimensional Arrays : array inside array is possible. Such type of
+                arrays are considered as multi dimensional arrays or nested arrays.</h3>
+            <pre class="language-js"><code>var favNumber=[10,20,30],[40,50,60],[70,80,90]
+console.log(nums[0])//[10,20,30]
+ console.log(nums[0][0])//10
+            </code></pre>
+
+            <h3>Access Arrays : Accessing elements of array by using index.</h3>
+            <pre class="language-js"><code>var friends = ['ramesh','mahesh','suresh']
+console.log(friends[0]);
+cosnsole.log(friends);</code></pre>
+
+            <h3>Update Arrays : update array elements by using index.</h3>
+            <pre class="language-js"><code>friends = ['ramesh','mahesh','suresh']
+friends[0]='Shivam'</code></pre>
+
+            <h3>Add New Element in Arrays : add new elements to the array by using index.</h3>
+            <pre class="language-js"><code>friends = ['ramesh','mahesh','suresh']
+friends[3]='Shivam'</code></pre>
+
+            <h3>Empty Arrays : create an empty array.</h3>
+            <pre class="language-js"><code>var numbers = []
+var numbers = new Array()</code></pre>
+
+            <h3>Length of Arrays : How to find length of array</h3>
+            <pre class="language-js"><code>friends = ['ramesh','mahesh','suresh']
+friends.length</code></pre>
+
+            <!-- Javascript Array Method:  Java script defines several methods which are applicable on arrays.
+ Being a programmer we can use these methods directly and we are not responsible to implement
+ so that our life will become very easy. -->
+            <h3>push() Arrays Method - To add element at end of the array : After addding this element it returns the
+                length of the array.</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6]
+console.log(favNumber.push(21));
+console.log(favNumber); //["1","4","3","7","8","6",21]</code></pre>
+
+            <h3>pop() Array Method -To remove and returns last element.</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6]
+console.log(favNumber.pop());
+console.log(favNumber);//["1","4","3","7","8"]</code></pre>
+
+            <h3>unshift() Array Method - To add element at beginning of the array</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6]
+console.log(favNumber.unshift(0));
+console.log(favNumber); //[0,"1","4","3","7","8","6"]</code></pre>
+
+            <h3>shift() Array Method - To remove and return first element.</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6]
+console.log(favNumber.shift());
+console.log(favNumber); //["4","3","7","8","6"]</code></pre>
+
+            <h3>indexOf() Array Method - To return index of first occurrence of the given element.</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6]
+console.log(favNumber.indexOf(8)); //output 4</code></pre>
+
+            <h3>slice() Array Method - to get part of the array from begin index to end index. slice() doesn't changes
+                the original array and returns array object.</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6]
+console.log(favNumber.slice(1,5));//[4, 3, 7, 8]
+console.log(favNumber)//[1, 4, 3, 7, 8, 6]</code></pre>
+
+            <h3>splice() Array Method - splice() changes the original array and returns array object.</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6,4,5]
+console.log(favNumber.splice(1,5));//[4, 3, 7, 8, 6]
+console.log(favNumber)//[1, 4, 5]</code></pre>
+
+
+            <!-- Retrieving Elements of Array: -->
+            <h3>While Loop.</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6]
+var i=0
+while(i<=favNumber.length){
+console.log(favNumber[i]);
+i++
+}</code></pre>
+
+            <h3>For Loop</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6]
+for(i=0;i<=favNumber.length;i++){
+console.log(favNumber[i]);
+}</code></pre>
+
+            <h3>For of Loop</h3>
+            <pre class="language-js"><code>var favNumber=[1,4,3,7,8,6]
+for(num of favNumber){
+console.log(num);}</code></pre>
+
+            <h3>forEach() Method : forEach() is specially designed method to retrieve elements of Array.
+            </h3>
+            <pre class="language-js"><code>//Syntax
+arrayobject.forEach(function)
+var favNumber=[1,4,3,7,8,6]
+function printFavnum(element){
+console.log(element)
+}
+favNumber.forEach(printFavnum)</code></pre>
+
+            <!-- Immutability vs Mutability: -->
+            <h3>Immutability vs Mutability: Mutability means changeable where as Immutable means Non-Changeable.
+            </h3>
+            <h3>Mutability: Once we creates an array object,we are allowed to change its content.
+                Hence arrays are Mutable.
+            </h3>
+            <pre class="language-js"><code>var numbers=[10,20,30,40]
+numbers[0]=777
+console.log(numbers)//[777,20,30,40]</code></pre>
+
+            <h3>Immutability: Once we creates string object,we are not allowed to change the content.If we are trying to
+                change
+                with those changes a new object will be created and we cannot change content of existing object.
+            </h3>
+            <pre class="language-js"><code>var name='Sunny'
+name[0]='B'
+console.log(name)// Sunny</code></pre>
+
+            <!-- JS Object -->
+            <h3>Javascript Object : JavaScript objects store information in the form of key-value pairs.
+                These are similar to Java Map objects and Python Dictionary objects.
+            </h3>
+            <pre class="language-js"><code>//var variableName={ key1:value1,key2:value2,...};
+var movie= {
+name:"dilwale",
+hero:"ajay devgan",
+heroin:"sapna"
+}</code></pre>
+
+            <h3>Javascript Object : Access values from Object:
+            </h3>
+            <pre class="language-js"><code>//obj["key"] : Here quotes are mandatory
+movie["hero"] //valid
+movie[hero] //Uncaught ReferenceError: hero is not defined
+
+//obj.key : Here we cannot take quotes
+movie.hero</code></pre>
+
+            <h3>Javascript Object : Create and initialize JavaScript objects:
+            </h3>
+            <pre class="language-js"><code>var nums={}
+var nums=new Object()</code></pre>
+
+            <h3>Javascript Object : add key value to object
+            </h3>
+            <pre class="language-js"><code>var movie=new Object()
+movie['hero']='ajay'
+movie.heroin='sapna'
+console.log(movie)</code></pre>
+
+            <h3>Javascript Object : update value
+            </h3>
+            <pre class="language-js"><code>var movie={
+hero:'ajay'}
+movie['hero']='Ajay Devgan'
+console.log(movie)</code></pre>
+
+            <h3>Javascript Object : iterating objects
+            </h3>
+            <pre class="language-js"><code>var movie={name:'dilwale',heroin:'sapna',hero:'ajay'}
+for(keys in movie){
+console.log(keys)}</code></pre>
+
+            <h3>Javascript Object : Nested Objectes and Array - Inside Array, we can take objects. Similarly inside
+                Objects we can take array.
+                Hence nesting of objects and arrays is possible.
+            </h3>
+            <pre class="language-js"><code>//inside array -> object
+var movie=[{name:'dilwale',hero:'ajay'},{name:'phool or kante',hero:'ajay'},{name:'gair',hero:'ajay'}]
+console.log(movie)
+movie[0].name
+
+//inside object -> array
+var favNumber={fnum:[1,4,3],snum:[7,8,6],tnum:[4,2,0]}
+favNumber.fnum[0] //1
+favNumber.fnum //(3) [1, 4, 3]</code></pre>
+
+            <!-- Object Method -->
+            <h3>Javascript Object Method : Java script object can contain methods also.
+            </h3>
+            <pre class="language-js"><code>//inside object, we can take method also
+var methods={
+m1:1,
+m2:2,
+m3:function(){
+console.log('first num is:'+this.m1+'second num is:'+this.second)
+}
+}
+methods.m3()
+
+//Inside object methods,if we want to access object properties then we should use 'this' keyword.
+var methods={
+a:'apple',
+b:'banana',
+fruits:function(){
+console.log('first fruit is:'+this.a+'second fruit is:'+this.b)
+}
+}
+methods.fruits()
+
+//it is possible to refer already exisiting function as object method
+ function year(){
+console.log('2021')
+}
+var movie={
+name:'bahubali',
+hero:'prabhas',
+year:year
+}
+movie.year() //2021
+
+//inside function we can access property of object
+function movieInfo(){
+console.log('Movie name is: '+this.name)
+console.log('Hero name is: '+this.hero)
+}
+var movie={
+name:'bahubali',
+hero:'prabhas',
+getInfo:movieInfo
+}
+movie.getInfo()
+//Movie name is: bahubali
+//Hero name is: prabhas
+
+// Even we are not required to use function keyword also for object methods inside object and we can declare function directly without key.[But outside of object compulsory we should use
+var movie =
+{
+name:"Rockstar",
+hero:"Ranbeer Kapoor",
+year:"2012",
+myFunction(){
+console.log("kjdf");}
+}</code></pre>
+
+            <!--DOM (Document Object Model)-->
+            <h3>To display Document to the console
+            </h3>
+            <pre class="language-js"><code>document</code></pre>
+
+            <h3>To Display DOM objects on the console:
+            </h3>
+            <pre class="language-js"><code>console.dir(document)</code></pre>
+
+            <h3>How to grab HTML Elements from the DOM
+            </h3>
+            <pre class="language-js"><code>document.URL //This is original URL of the website
+document.body //It returns everything inside body
+document.head //It returns head of the page
+document.links //It resturns list of all links of the pagae</code></pre>
+
+            <!--DOM Method-->
+            <h3>Important methods of DOM
+            </h3>
+            <pre class="language-js"><code>document.getElementById() //Returns element with the specified id
+document.getElementsByClassName() //Returns list of all elements belongs to the specified class
+document.getElementsByTagName() //Returns list of all elements with the specified tag
+document.querySelector() //Returns the first object matching CSS style selector
+document.querySelectorAll() //</code></pre>
+
+            <!--DOM: Content Interaction:-->
+            <h3>DOM : Change Text
+            </h3>
+            <pre class="language-js"><code>var h1=document.querySelector('h1')
+h1.textContent="This is Modified Content"</code></pre>
+
+            <h3>DOM : Change color
+            </h3>
+            <pre class="language-js"><code>var h1=document.querySelector('h1')
+h1.style.color = "red";
+h1.style.background = "orange";</code></pre>
+
+            <h3>DOM : change HTML Code
+            </h3>
+            <pre class="language-js"><code>var p= document.querySelector('p')
+p.innerHTML='&lt;strong&gt;&lt;em&gt;'+p.textContent+'&lt;/em&gt;&lt;/strong&gt;'</code></pre>
+
+            <h3>DOM : change Attributes
+            </h3>
+            <pre class="language-js"><code>element.getAttribute('attributeName') //returns the value associated with specified attribute
+element.setAttribute('attributeName','attributeValue') //To set new value to the attribute</code></pre>
+
+            <h3>Event Handling by using DOM
+            </h3>
+            <pre class="language-js"><code>element.addEventListener(event,function);</code></pre>
+
+            <h3>Event Handling : operations
+            </h3>
+            <pre class="language-js"><code>//To change color of h1 on single click operation:
+var myh1=document.querySelector('h1')
+myh1.addEventListener('click',changeColor)
+
+//To change color of h1 on double click operation
+var myh1=document.querySelector('h1')
+myh1.addEventListener('dblclick',changeColor)
+
+//To change color of h1 on mouse over operation
+var myh1=document.querySelector('h1')
+myh1.addEventListener('mouseover',changeColor)
+
+//To change color of h1 on mouse out operation
+var myh1=document.querySelector('h1')
+myh1.addEventListener('mouseout',changeColor)</code></pre>
+
+        </ol>
+        <script src="../cheatsheet/prism.js"></script>
+    </div>
+</body>
+
+</html>

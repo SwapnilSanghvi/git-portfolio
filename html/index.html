@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../cheatsheet/prism.css">
+    <link rel="stylesheet" href="../cheatsheet/style.css">
+    <title>HTML Cheatsheet by Swapnil</title>
+</head>
+
+<body>
+    <nav>
+        <h1 class="center">HTML Cheatsheet By Swapnil Sanghvi</h1>
+        <!-- <div class="content center">
+            HTML Cheatsheet By Swapnil Sanghvi
+        </div> -->
+    </nav>
+    <div class="container">
+        <ol>
+            <!-- HTML Structure -->
+            <h3>HTML Structure</h3>
+
+            <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; </code></pre>
+
+
+            <!-- Link CSS -->
+            <h3>Link CSS</h3>
+
+            <pre class="language-html"><code>&lt;link rel="stylesheet" href="prism.css"&gt;</code></pre>
+
+
+            <!-- Link JS -->
+            <h3>Link JS</h3>
+
+            <pre class="language-html"><code>&lt;script src="function.js"&gt;&lt;/script&gt;</code></pre>
+
+
+            <!-- Html Comment -->
+            <h3>Html Comment</h3>
+
+            <pre class="language-html"><code>&lt;!--html comment--&gt; </code></pre>
+
+
+            <!-- Html Headings -->
+            <h3>Html Headings</h3>
+
+            <pre class="language-html"><code>&lt;h1&gt;h1 heading&lt;/h1&gt; </code></pre>
+            <pre class="language-html"><code>&lt;h2&gt;h2 heading&lt;/h2&gt; </code></pre>
+            <pre class="language-html"><code>&lt;h3&gt;h3 heading&lt;/h3&gt; </code></pre>
+            <pre class="language-html"><code>&lt;h4&gt;h4 heading&lt;/h4&gt; </code></pre>
+            <pre class="language-html"><code>&lt;h5&gt;h5 heading&lt;/h5&gt; </code></pre>
+            <pre class="language-html"><code>&lt;h6&gt;h6 heading&lt;/h6&gt; </code></pre>
+
+
+            <!-- Html paragraph -->
+            <h3>Html paragraph</h3>
+
+            <pre class="language-html"><code>&ltp&gt;paragraph&lt;/p&gt; </code></pre>
+
+
+            <!-- Html Bold -->
+            <h3>Html Bold : Strong tag is recommended</h3>
+
+            <pre class="language-html"><code>&ltb&gt;bold text&lt;/b&gt; </code></pre>
+            <pre class="language-html"><code>&ltstrong&gt;important text&lt;/strong&gt; </code></pre>
+
+            <!-- Html Italic -->
+            <h3>Html Italic : emphasized tag is recommended</h3>
+
+            <pre class="language-html"><code>&lti&gt;talic text&lt;/i&gt; </code></pre>
+            <pre class="language-html"><code>&ltem&gt;emphasized text&lt;/em&gt; </code></pre>
+
+
+            <!-- List : ordered list -->
+            <h3>Ordered list</h3>
+
+            <pre class="language-html"><code>&ltol&gt;
+    &ltli&gt;item 1&lt;/li&gt;
+    &ltli&gt;item 2&lt;/li&gt;
+    &ltli&gt;item 3&lt;/li&gt;
+&lt;/ol&gt; </code></pre>
+
+
+            <!-- List : unordered list -->
+            <h3>Unordered list</h3>
+
+            <pre class="language-html"><code>&ltul&gt;
+    &ltli&gt;item 1&lt;/li&gt;
+    &ltli&gt;item 2&lt;/li&gt;
+    &ltli&gt;item 3&lt;/li&gt;
+&lt;/ul&gt; </code></pre>
+
+
+            <!-- Image Tag -->
+            <h3>Image Tag with Attributes</h3>
+
+            <pre
+                class="language-html"><code>&ltimg src="logo.jpg" alt="html logo" height="100px" width="100px"&gt;</code></pre>
+
+            <!-- Hyper Links -->
+            <h3>Hyper Link</h3>
+
+            <pre class="language-html"><code>&lta ref="https://google.com"&gt;Visit Google&lt;/a&gt; </code></pre>
+
+            <!-- Div Tag -->
+            <h3>Div Tag</h3>
+
+            <pre class="language-html"><code>&ltdiv&gt;
+&lth1&gt;heading1&lt;/h1&gt;
+&lth2&gt;heading2&lt;/h2&gt;
+&lth3&gt;heading3&lt;/h3&gt;
+&lt;/div&gt; </code></pre>
+
+            <!-- Span Tag -->
+            <h3>Span Tag</h3>
+
+            <pre class="language-html"><code>&ltspan&gt;
+&lth1&gt;this &lt;span&gt;h1, h2, h3, h4, h5&lt;/span&gt; is html heading&lt;/h1&gt;
+&lt;/span&gt; </code></pre>
+
+            <!-- Html Table -->
+            <h3>Html Table</h3>
+
+            <pre class="language-html"><code>&lt;table border="1"&gt;
+    &lt;thead&gt;
+       &lt;th&gt;Position&lt;/th&gt;
+       &lt;th&gt;Country&lt;/th&gt;
+       &lt;th&gt;Player Name&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tr&gt;
+       &lt;td&gt;1&lt;/td&gt;
+       &lt;td&gt;SA&lt;/td&gt;
+       &lt;td&gt;AB Devilliers&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td&gt;2&lt;/td&gt;
+       &lt;td&gt;IND&lt;/td&gt;
+       &lt;td&gt;Virat Kohli&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+       &lt;td&gt;3&lt;/td&gt;
+       &lt;td&gt;WI&lt;/td&gt;
+       &lt;td&gt;Chris Gyale&lt;/td&gt;
+    &lt;/tr&gt;
+ &lt;/table&gt;</code></pre>
+
+            <!-- HTML Form -->
+            <h3>HTML Form and Input with Attributes</h3>
+
+            <pre class="language-html"><code>&lt;form action="thankyou.html" method="GET/POST"&gt;
+&lt;label for ""&gt;Label&lt;label&gt;
+&lt;input id="" type="" name="" placeholder="" value="" pattern="" title="" required&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>HTML Form and Input with Example</h3>
+
+            <pre class="language-html"><code>&lt;form action="thankyou.html" method="GET"&gt;
+  &lt;label for="name"&gt;Name&lt;/label&gt;
+  &lt;input type="text" id="" name="name" value="" placeholder="" required&gt;&lt;br&gt;
+  &lt;label for="password"&gt;Password&lt;/label&gt;
+  &lt;input type="password" name"password"&gt;&lt;br&gt;
+  &lt;label for="email"&gt;Email&lt;/label&gt;
+  &lt;input type="email" name"email"&gt;&lt;br&gt;
+  &lt;label for="color"&gt;Fav Color&lt;/label&gt;
+  &lt;input type="color" name"color"&gt;&lt;br&gt;
+
+  &lt;label for="course"&gt;Course&lt;/label&gt;&lt;br&gt;
+  &lt;label for="bca"&gt;BCA&lt;/label&gt;
+  &lt;input type="radio" name="course" value="bca" checked&gt;
+  &lt;label for="mca"&gt;MCA&lt;/label&gt;
+  &lt;input type="radio" name="course" value="mca"&gt;
+  &lt;label for="btech"&gt;B.Tech&lt;/label&gt;
+  &lt;input type="radio" name="course" value="btech"&gt;&lt;br&gt;
+
+  &lt;label for="hobby"&gt;Hobby&lt;/label&gt;
+  &lt;label for="developer"&gt;Developer&lt;/label&gt;
+  &lt;input type="checkbox" name="hobby" value="designer"&gt;
+  &lt;label for="designer"&gt;Designer&lt;/label&gt;
+  &lt;input type="checkbox" name="hobby" value="developer"&gt;
+  &lt;label for="marketer"&gt;Marketer&lt;/label&gt;
+  &lt;input type="checkbox" name="hobby" value="marketer"&gt;&lt;br&gt;
+
+  &lt;label for="state"&gt;State&lt;/label&gt;
+  &lt;select multiple name="state"&gt;
+      &lt;option value="up"&gt;Uttar Prdaesh&lt;/option&gt;
+      &lt;option value="mp"&gt;Madhya Prdaesh&lt;/option&gt;
+      &lt;option value="rj"&gt;Rajasthan&lt;/option&gt;
+  &lt;/select&gt;&lt;br&gt;
+
+  &lt;h3&gt;Feedback&lt;/h3&gt;
+  &lt;textarea name="feedback" rows="8" cols="80"&gt;&lt;/textarea&gt;&lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;&lt;/input&gt;
+&lt;/form&gt;</code></pre>
+            <!-- Regular Expression -->
+            <h3>Regular Expression - Notes</h3>
+
+            <pre class="language-html"><code>&lt;!-- Regular Expression
+[0-9] -- Any Digit
+[a-z] -- only lower case alphabet symbol
+[A-Z] -- only upper case alphabet symbol
+[a-zA-Z] -- any alphabet symbol
+[a-zA-Z0-9] -- any aplphanumeric character
+[abc] -- either a or b or c
+[^abc] --Expect a or b or c any other character
+[^a-zA-Z0-9] --Any Character Expect alpha numeric character
+a* -- any number of a-s includin zero
+a+ --atleast one a
+
+[6-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] = [6-9] [0-9] {9}
+                --&gt;</code></pre>
+
+            <h3>Regular Expression - Examples</h3>
+
+            <pre class="language-html"><code>&lt;form action="thankyou.html" method="get"&gt;
+  &lt;h3&gt;Case-1: The value should contain minimum 5 character and maximum 10 character&lt;/h3&gt;
+  &lt;label for="case1"&gt;Case1&lt;/label&gt;
+  &lt;input type="text" name="case1" pattern=".{5,10}" title="enter minimun 5 and maximun 10 character"&gt;&lt;br&gt;
+
+  &lt;h3&gt;Case-2: The value should contain onlye digits, exactly 10 digits only allowed&lt;/h3&gt;
+  &lt;label for="case2"&gt;Case2&lt;/label&gt;
+  &lt;input type="text" name="case2" pattern="[0-9]{10}" title="invalid message"&gt;&lt;br&gt;
+
+  &lt;h3&gt;Case-3: The value should contain onlye digits, exactly 10 digits only allowed but first digital should be either 6 or 7 or 8 or 9&lt;/h3&gt;
+  &lt;label for="case3"&gt;Case3&lt;/label&gt;
+  &lt;input type="text" name="case3" pattern="[6-9][0-9]{9}" title="invalid message"&gt;&lt;br&gt;
+
+  &lt;h3&gt;Case-4: password atleast 8 character must be required. the first character should be upper case alphabet symbol remaining any alpha numberic.&lt;/h3&gt;
+  &lt;label for="case4"&gt;Case3&lt;/label&gt;
+  &lt;input type="text" name="case4" pattern="[A-Z][a-zA-Z0-9]{7}[a-zA-Z0-9]*" title="invalid message"&gt;&lt;br&gt;
+
+  &lt;h3&gt;Case-5: first letter uppercase and remaining 7 letter is small and last character is special symbol&lt;/h3&gt;
+  &lt;label for="case5"&gt;Case5&lt;/label&gt;
+      lt;input type="text" name="case5" pattern="[A-Z][a-z]{7} [^a-zA-Z0-9]" title="invalid message"&gt;&lt;br&gt;
+  &lt;input type="submit" value="submit"&gt;
+&lt;/form&gt;</code></pre>
+
+            <!-- Html Spaces -->
+            <h3>HTML Spaces</h3>
+
+            <pre class="language-html"><code>&lt;!-- &amp;nbsp; to add a single space --&gt;
+&amp;nbsp;
+&lt;!-- &amp;ensp; to add a single space --&gt;
+&amp;ensp;
+&lt;!-- &amp;emsp; to add a single space --&gt;
+&amp;emsp;
+&lt;!-- to add a line break --&gt;
+&lt;br&gt;
+&lt;!-- to add a horizontal line --&gt;
+&lt;hr&gt;</code></pre>
+
+            <!-- HTML Class and ID Attribute -->
+            <h3>HTML Class Attribute : The HTML class attribute is used to specify a class for an HTML element.</h3>
+
+            <pre class="language-html"><code>&lt;p class="myclass"&gt;Paragraph&lt;/p&gt;</code></pre>
+            <!-- HTML Class and ID Attribute -->
+            <h3>HTML ID Attribute : The HTML id attribute is used to specify a unique id for an HTML element.</h3>
+
+            <pre class="language-html"><code>&lt;p id="myid"&gt;Paragraph&lt;/p&gt;</code></pre>
+
+        </ol>
+
+        <script src="../cheatsheet/prism.js"></script>
+    </div>
+
+</body>
+
+</html>

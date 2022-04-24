@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../cheatsheet/prism.css">
+    <link rel="stylesheet" href="../cheatsheet/style.css">
+    <title>Git Cheatsheet by Swapnil Sanghvi</title>
+</head>
+
+<body>
+    <nav>
+        <h1 class="center">Git Cheatsheet by Swapnil Sanghvi</h1>
+    </nav>
+    <div class="container">
+        <ol>
+            <!-- SECTION1 : Setting up Enviroment -->
+            <h2 class="section">Setting Up the Environment</h2>
+
+            <h3>Git Configure : Set Email & Name of Git User</h3>
+            <pre class="language-git"><code>git config --global user.name "Your Name"</code></pre>
+            <pre class="language-git"><code>git config --global user.email "Your Email"</code></pre>
+
+
+            <!-- SECTION2 : Command Line Tool -->
+            <h2 class="section">Command Line Tool</h2><br>
+
+            <!-- Print Directory -->
+
+            <h3>Print Working Directory</h3>
+            <pre class="language-git"><code>pwd</code></pre>
+
+
+            <!-- List Items -->
+
+            <h3>List Items</h3>
+            <pre class="language-git"><code>ls</code></pre>
+
+
+            <h3>to view detailed information of list items</h3>
+            <pre class="language-git"><code>ls -l</code></pre>
+
+
+            <h3>to view hidden files and folder in list items</h3>
+            <pre class="language-git"><code>ls -a</code></pre>
+
+
+            <h3>to view hidden files and folder with detailed information in list items</h3>
+            <pre class="language-git"><code>ls -al</code></pre>
+            <pre class="language-git"><code>ls -la</code></pre>
+
+
+            <!-- Change Directory -->
+
+            <h3>Change Directory : to change directory</h3>
+            <pre class="language-git"><code>cd ./directoryname</code></pre><br>
+            <h3>go to parent directory</h3>
+            <pre class="language-git"><code>cd ..</code></pre><br>
+            <h3>go to home directory</h3>
+            <pre class="language-git"><code>cd</code></pre>
+            <pre class="language-git"><code>~</code></pre><br>
+            <h3>go to root folder</h3>
+            <pre class="language-git"><code>cd /</code></pre>
+
+
+            <!-- Create Files and Folder -->
+
+            <h3>Create Folder</h3>
+            <pre class="language-git"><code>mkdir foldername</code></pre><br>
+            <h3>Create Multiple Folder</h3>
+            <pre class="language-git"><code>mkdir folder1 folder2 folder3 folder4</code></pre><br>
+            <h3>Create folder inside folder</h3>
+            <pre class="language-git"><code>mkdir -p parentfolder/childfolder</code></pre><br>
+            <h3>Create files</h3>
+            <pre class="language-git"><code>touch file.html</code></pre><br>
+            <h3>Create Multiple files</h3>
+            <pre class="language-git"><code>touch file.txt file.html file.js</code></pre>
+
+
+            <!-- Remove Files and Folder -->
+
+            <h3>Remove file</h3>
+            <pre class="language-git"><code>rm file.txt</code></pre><br>
+            <h3>Remove file inside a folder</h3>
+            <pre class="language-git"><code>rm folder1/file.html</code></pre><br>
+            <h3>Remove folder : empty</h3>
+            <pre class="language-git"><code>rmdir folder2</code></pre><br>
+            <h3>Remove folder : which is not empty</h3>
+            <pre class="language-git"><code>rm -R folder3</code></pre><br>
+
+
+            <!-- Copy and Move Files/Folders -->
+
+            <h3>Copy File</h3>
+            <pre class="language-git"><code>cp file.txt folder1/file.txt</code></pre><br>
+            <h3>Copy File with Rename</h3>
+            <pre class="language-git"><code>cp file.html folder1/index.html</code></pre><br>
+            <h3>Copy Folder</h3>
+            <pre class="language-git"><code>cp -R folder1 folder2</code></pre><br>
+            <h3>Move File/Folder</h3>
+            <pre class="language-git"><code>mv file.txt folder1/file.txt</code></pre><br>
+            <h3>Rename File/Folder</h3>
+            <pre class="language-git"><code>mv file.html folder1/index.html</code></pre><br>
+
+
+            <!-- SECTION3 : Tracking Your Project -->
+            <h2 class="section">Tracking Projects</h2><br>
+
+
+            <h3>initialize Git</h3>
+            <pre class="language-git"><code>git init</code></pre>
+
+
+            <h3>To track files and folder</h3>
+            <pre class="language-git"><code>git status</code></pre>
+
+
+            <!-- add file/folder in staging area -->
+
+            <h3>Stage any specific file </h3>
+            <pre class="language-git"><code>git add index.html</code></pre>
+
+
+            <h3>Stage all files & Folder</h3>
+            <pre class="language-git"><code>git add .</code></pre>
+
+
+            <!-- commiting changes -->
+
+            <h3>Making Commits </h3>
+            <pre class="language-git"><code>git commit -m "Your Commit Message"</code></pre>
+
+
+            <!-- commiting history -->
+
+            <h3>Viewing the commiting history </h3>
+            <pre class="language-git"><code>git log</code></pre>
+            <pre class="language-git"><code>git log --oneline"</code></pre>
+            <pre class="language-git"><code>git log --oneline --graph --all"</code></pre>
+
+
+            <!-- delete git project -->
+
+            <h3>Deleting the git project </h3>
+            <pre class="language-git"><code>rm -rf .git</code></pre>
+
+
+            <!-- SECTION4 : Additional Git Commands -->
+            <h2 class="section">Additional Git Commands</h2><br>
+
+            <!-- Skipping the staging area -->
+
+            <h3>Skipping the staging area</h3>
+            <pre class="language-git"><code>git commit -am "Your Commit Message"</code></pre>
+            <pre class="language-git"><code>git commit -a -m "Your Commit Message"</code></pre>
+
+            <!-- Git Difference -->
+
+            <h3>Track the changes that have not been staged</h3>
+            <pre class="language-git"><code>git diff</code></pre>
+
+
+            <h3>display the changes of already staged files</h3>
+            <pre class="language-git"><code>git diff --staged</code></pre>
+
+
+            <!-- Remove, Move and Rename Files in git -->
+
+            <h3>Remove Files in Git</h3>
+            <pre class="language-git"><code>git rm file.txt</code></pre>
+
+
+            <h3>Remove Files Forecelfully in Git</h3>
+            <pre class="language-git"><code>git rm -f file.html</code></pre>
+
+
+            <h3>Move and Rename Files in Git</h3>
+            <pre class="language-git"><code>git mv home.html index.html</code></pre>
+            <pre class="language-git"><code>git mv index.html folder1/index.html</code></pre>
+
+
+            <!-- Untrack an already tracked file -->
+
+            <h3>Untrack an already tracked file</h3>
+            <pre class="language-git"><code>git rm --cached file.txt</code></pre>
+
+
+            <!-- Unstaging & Unmodifing files -->
+
+            <h3>Unstage an staged file</h3>
+            <pre class="language-git"><code>git restore --staged file.txt</code></pre>
+
+
+            <h3>Take file from last commit</h3>
+            <pre class="language-git"><code>git checkout --file.txt</code></pre>
+
+
+            <h3>Rollback to the previous commit, lossing all modified files</h3>
+            <pre class="language-git"><code>git checkout -f</code></pre>
+
+
+            <!-- Setup Alias in Git -->
+
+            <h3>Setup alias in git</h3>
+            <pre class="language-git"><code>git config --global alias.shortcut command</code></pre>
+
+
+            <!-- SECTION5 : Non linear Development Branching -->
+            <h2 class="section">Non linear Development Branching</h2><br>
+
+
+            <h3>Create a new branch</h3>
+            <pre class="language-git"><code>git branch branchname</code></pre>
+
+            <h3>View all branch</h3>
+            <pre class="language-git"><code>git branch</code></pre>
+
+            <h3>View commit of all branch</h3>
+            <pre class="language-git"><code>git branch -v</code></pre>
+
+            <h3>Moving between branch</h3>
+            <pre class="language-git"><code>git checkout branchname</code></pre>
+
+            <h3>Creating and Checkout to a new branch</h3>
+            <pre class="language-git"><code>git checkout -b branchname</code></pre>
+            <!-- Deleting Branches -->
+
+            <h3>Deleting Merged Branch</h3>
+            <pre class="language-git"><code>git branch -d branchname</code></pre>
+
+            <h3>Deleting a non-merged Branch</h3>
+            <pre class="language-git"><code>git branch -D branchname</code></pre>
+
+
+            <!-- SECTION6 : Non linear Development Merging and Rebasing-->
+            <h2 class="section">Non linear Development Merging and Rebasing</h2><br>
+
+
+            <h3>Merge Branch</h3>
+            <pre class="language-git"><code>git checkout master</code></pre>
+            <pre class="language-git"><code>git merge branchname</code></pre>
+
+
+
+            <h3>Rebase Branch</h3>
+            <pre class="language-git"><code>git checkout branchname</code></pre>
+            <pre class="language-git"><code>git rebase master</code></pre>
+
+
+            <!-- SECTION7 : Git and Github-->
+            <h2 class="section">Git and Github</h2><br>
+
+
+            <h3>Adding Remote in git</h3>
+            <pre class="language-git"><code>git remote add remotename github-repo-url</code></pre>
+            <pre
+                class="language-git"><code>git remote add origin https://github.com/SwapnilSanghvi/Git-Cheatsheet.git</code></pre>
+
+
+            <h3>view all Remote</h3>
+            <pre class="language-git"><code>git remote</code></pre>
+
+
+            <h3>view all Remote with location</h3>
+            <pre class="language-git"><code>git remote -v</code></pre>
+
+
+
+            <h3>Push commits in github</h3>
+            <pre class="language-git"><code>git push remotename branchname</code></pre>
+            <pre class="language-git"><code>git push origin master</code></pre>
+
+
+
+            <h3>Push commits in github</h3>
+            <pre class="language-git"><code>git remote set-url remotename github-repo-url</code></pre>
+            <pre
+                class="language-git"><code>git remote set-url origin https://github.com/SwapnilSanghvi/Git-Cheatsheet.git</code></pre>
+
+
+            <h3>Remove Remote</h3>
+            <pre class="language-git"><code>git remote remove remotename</code></pre>
+            <pre class="language-git"><code>git remote remove origin</code></pre>
+
+
+
+            <h3>Fetch changes from github</h3>
+            <pre class="language-git"><code>git fetch</code></pre>
+            <h3>Merging changes of fetch</h3>
+            <pre class="language-git"><code>git merge</code></pre>
+
+
+
+            <h3>Git Pull = Git Fetch + Git Merge</h3>
+            <pre class="language-git"><code>git pull remotename branchname</code></pre>
+            <pre class="language-git"><code>git pull origin master</code></pre>
+
+            <!-- SECTION8 : Miscellaneous Git Tools-->
+            <h2 class="section">Miscellaneous Git Tools</h2><br>
+
+
+            <h3>Show me the commit changes</h3>
+            <pre class="language-git"><code>git show commitid</code></pre>
+
+
+            <!-- Stashing -->
+
+            <h3>Stash : to save changes without doing commit</h3>
+            <pre class="language-git"><code>git add .</code></pre>
+            <pre class="language-git"><code>git stash</code></pre>
+
+
+            <h3>Show Stash</h3>
+            <pre class="language-git"><code>git stash list</code></pre>
+
+
+            <h3>Revert Stash</h3>
+            <pre class="language-git"><code>git stash apply stashid</code></pre>
+
+
+            <h3>Remove Stash</h3>
+            <pre class="language-git"><code>git stash drop stashid</code></pre>
+
+
+            <!-- clean working repository -->
+
+            <h3>Cleaning working repository</h3>
+            <pre class="language-git"><code>git clean -f -d</code></pre>
+
+
+            <!-- change the last commit and its content -->
+
+            <h3>Change last commit and its content</h3>
+            <pre class="language-git"><code>git commit --amend</code></pre>
+
+
+            <!-- SECTION9 : Rewriting History-->
+            <h2 class="section">Rewriting History</h2><br>
+
+            <!--Travelling to the past commits-->
+
+            <h3>Travelling to the past commits</h3>
+            <pre class="language-git"><code>git checkout commitid</code></pre>
+            <h3>Switch back to master branch</h3>
+            <pre class="language-git"><code>git switch -</code></pre>
+
+            <!--making new branches from old commits-->
+
+            <h3>Making new branches from old commits</h3>
+            <pre class="language-git"><code>git switch -c branchname</code></pre>
+
+
+            <!--revert commit in git-->
+
+            <h3>Revert commit - undo the changes of commit</h3>
+            <pre class="language-git"><code>git revert commitid</code></pre>
+
+
+            <!--reset commit in git-->
+
+            <h3>Reset commit - delete all commits from the given commit id</h3><br>
+            <h4>if you use git reset --soft then you can't undo the commits but you have a chance to recover files with
+                the help of git add .<br> but
+                in git reset --hard you can't recover anything</h4>
+            <pre class="language-git"><code>git reset commitid</code></pre>
+            <pre class="language-git"><code>git reset --soft commitid</code></pre>
+            <pre class="language-git"><code>git reset --hard commitid</code></pre>
+
+            <!--deleting commits fom github-->
+
+            <h3>Push forecefully : deleting commits from github</h3>
+            <pre class="language-git"><code>git push -f origin master</code></pre>
+
+
+            <!--Cherry-Picking Commits-->
+
+            <h3>Cherry-Picking Commits : pick the changes from a specific commit from any branch and merge with
+                another branch</h3>
+            <pre class="language-git"><code>git cherry-pick commitid</code></pre>
+
+
+        </ol>
+    </div>
+    <script src="../cheatsheet/prism.js"></script>
+</body>
+
+</html>

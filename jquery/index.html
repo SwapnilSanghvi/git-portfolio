@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../cheatsheet/prism.css" />
+    <link rel="stylesheet" href="../cheatsheet/style.css" />
+    <title>Jquery Cheatsheet by Swapnil</title>
+</head>
+
+<body>
+    <nav>
+        <h1 class="center">Jquery Cheatsheet By Swapnil Sanghvi</h1>
+        <!-- <div class="content center">
+            Jquery Cheatsheet By Swapnil Sanghvi
+        </div> -->
+    </nav>
+    <div class="container">
+        <ol>
+            <!-- jQuery Selectors -->
+            <h3>jQuery Selectors : in jquery we have only one way to select html element</h3>
+            <pre class="language-js"><code>$(selecter) //Syntax
+
+$('h1') //Selects all h1 tags
+$('h1:first') //Selects only first h1 tag
+$('h1').first() //selects only first h1 tag
+$('h1:first-of-type') //Selects only first h1 tag
+$('h1:nth-of-type(2)') //Selects second h1 tag
+$('h1:last') //Selects only last h1 tag
+$('h1').last() //selects only last h1 tag</code></pre>
+
+            <h3>Manipulating HTML Elements: we can manipulate by using css() method.</h3>
+            <pre class="language-js"><code>$(selector).css(property,value) //Syntax
+
+$('h1').css('color','white');
+$('h1').css('background','red');
+$('h1').css('border','5px solid green');</code></pre>
+
+            <h3>jQuery text() Method: We can use this method to get and set text of the matched elements. i.e this
+                method acts as both
+                getter and setter method.</h3>
+            <pre class="language-js"><code>$('h1').text() //get
+$('h1').text('Swapnil Sanghvi') //set </code></pre>
+
+            <h3>jQuery html() Method : We can use this method to get and set html content.</h3>
+            <pre class="language-js"><code>$('h1').html() //get
+$('h1').html('<h2">Heading H2</h2>')</code></pre>
+
+            <h3>jQuery attr() Method : We can use this method to get and set attribute values.</h3>
+            <pre class="language-js"><code>$('img').attr('src') //get
+$('img').css({width:'150px',height:'150px'}); //set </code></pre>
+
+            <h3>jQuery val() Method : We can use val() method to get value of the first matched element.</h3>
+            <pre class="language-js"><code>$('input').val() //get
+$('input').val('swapnil') //set</code></pre>
+
+            <h3>jQuery addClass() Method : We an use this method to add specified class/classes to the set of matched
+                elements.</h3>
+            <pre class="language-js"><code>$('li').addClass('high')</code></pre>
+
+            <h3>jQuery removeClass() Method : Remove a single class/classes from each matched element.</h3>
+            <pre class="language-js"><code>$('li').removeClass('high') </code></pre>
+
+            <h3>jQuery toggleClass() Method : We can use this method to add and remove classes from the matched
+                elements.</h3>
+            <pre class="language-js"><code>$('li').toggleClass('low') //It will add 'low' class for every li tag
+$('li').toggleClass('low') // It will remove 'low' class because this class is already set</code></pre>
+
+            <!--jQuery event-->
+            <h3>jQuery click() Event : jQuery click() method can be used to add a click listener to the elements.</h3>
+            <pre class="language-js"><code>$('h1').click(function(){
+//Whenever click event happend, this function will execute
+});</code></pre>
+
+            <h3>jQuery keypress() Event : whenever we are pressing the key if we want to do any activity automatically
+                then we should
+                go for keypress() method.</h3>
+            <pre class="language-js"><code>$('input').keypress(function(){
+})</code></pre>
+
+            <h3>jQuery on() Event : this is smiliar of javascript addEventListner Function </h3>
+            <pre class="language-js"><code>$('h1').on('mouseover',function(){
+//Whenever mouseover event happend, this function will execute
+})
+
+$('h1').on('mouseout',function(){
+//Whenever mouseout event happend, this function will execute
+})
+
+$('h1').on('click',function(){
+//Whenever click event happend, this function will execute
+})
+
+$('h1').on('dblclick',function(){
+//Whenever double event happend, this function will execute
+})</code></pre>
+
+            <!--jQuery Effects-->
+            <h3>jQuery Fading Effects : jQuery defines the following methods for fading purposes.</h3>
+            <pre class="language-js"><code>//Hide the matched elements by fading them to transparent.
+$(selector).fadeOut(time_in_milisecond,function);
+
+// Display the matched elements which are fadeout
+$(selector).fadeIn(time_in_milisecond,function);
+
+//  Display or hide the matched elements
+$(selector).fadeToggle(time_in_milisecond,function);</code></pre>
+
+            <h3>jQuery Sliding Effects : jQuery defines the following methods for sliding effects purposes.</h3>
+            <pre class="language-js"><code>// Hide the matched elements with a sliding motion.
+$(selector).slideUp(time_in_milisecond,function);
+
+//  Display the matched elements with a sliding motion.
+$(selector).slideDown(time_in_milisecond,function);
+
+// Display or hide the matched elements with a sliding motion.
+$(selector).slideToggle(time_in_milisecond,function);</code></pre>
+
+        </ol>
+    </div>
+
+    <script src="../cheatsheet/prism.js"></script>
+</body>
+
+</html>

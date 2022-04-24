@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../cheatsheet/prism.css">
+    <link rel="stylesheet" href="../cheatsheet/style.css">
+    <title>CSS Cheatsheet by Swapnil</title>
+</head>
+
+<body>
+    <nav>
+        <h1 class="center">CSS Cheatsheet By Swapnil Sanghvi</h1>
+        <!-- <div class="content center">
+            CSS Cheatsheet By Swapnil Sanghvi
+        </div> -->
+    </nav>
+    <div class="container">
+        <ol>
+            <!-- Add CSS : External CSS -->
+            <h3>Add CSS : External CSS</h3>
+
+            <pre class="language-html"><code>&lt;!-- index.html file --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+  &lt;head&gt;
+      &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+      &lt;h1&gt;Heading 1 style using External CSS&lt;/h1&gt;
+  &lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+            <pre class="language-css"><code>/* style.css file */
+h1 {
+    color: blue;
+}</code></pre>
+            <!-- Add CSS : Internal CSS -->
+            <h3>Add CSS : Internal CSS</h3>
+
+            <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;style&gt;
+    h2 {
+    color: green;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;h1&gt;Heading 1 style using Internal CSS&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <!-- Add CSS : Inline CSS-->
+            <h3>Add CSS : Inline CSS</h3>
+
+            <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+  &lt;head&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+      &lt;h1 style="color:red;"&gt;Heading 1 Style using Inline CSS&lt;/h1&gt;
+  &lt;/body&gt;
+
+  &lt;/html&gt;</code></pre>
+            <!-- Comment in CSS -->
+            <h3>CSS Comment</h3>
+            <pre class="language-css"><code>/* CSS Comments */</code></pre>
+
+            <!-- Basic Structure of CSS File -->
+            <h3>Basic Structure of CSS File</h3>
+            <pre class="language-css"><code>tagname{
+  property:value;
+}</code></pre>
+
+            <!-- Various way to specify color in css -->
+            <h3>Various way to specify color in css</h3>
+            <pre class="language-css"><code>element{
+  /* Color Name */
+  color:red;
+
+  /* RGB (Red Green Blue) */
+  color:rgb(255,0,0);
+
+  /* HEX (Hexa Decimal) */
+  color:#ff0000;
+
+  /*HSL (Hue Saturation Lightness*/
+  color:hsl(0, 100%, 50%);
+
+  /*RGBA (Red Green Blue Alpha*/
+  color:rgba(255,0,0,1.0);
+}</code></pre>
+
+            <!-- CSS : Backgrounde -->
+            <h3>CSS : Background</h3>
+            <pre class="language-css"><code>element{
+  background: url("") #rrggbb no-repeat;
+  background-image:url("");
+  background-color:#rrggbb;
+  background-repeat:no-repeat;
+  background-size:cover;
+}</code></pre>
+            <!-- CSS : Border -->
+            <h3>CSS : Border</h3>
+            <pre class="language-css"><code>element{
+  border-widht:2px;
+  border-color:red;
+  border-style:solid;
+  border: 2px solid red;
+}</code></pre>
+
+            <!-- CSS : Selector -->
+            <h3>CSS : Selector</h3>
+            <pre class="language-html"><code>&lt;h1&gt;I am styling this heading using element selector&lt;/h1&gt;
+&lt;h1 id="orange"&gt;I am styling this heading using ID selector&lt;/h1&gt;
+&lt;h1 class="blue"&gt;I am styling this heading using Class selector&lt;/h1&gt;
+
+&lt;a href="https://swapnil-css-cheatsheet.netlify.app"&gt;Check CSS Cheatsheet&lt;/a&gt;
+
+&lt;h2&gt;CheatSheet for Progammer&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://swapnil-git-cheatsheet.netlify.app"&gt;Git Cheatsheet&lt;/a&gt;
+  &lt;li&gt;&lt;a href="https://swapnil-html-cheatsheet.netlify.app"&gt;HTML Cheatsheet&lt;/a&gt;
+  &lt;li&gt;&lt;a href="https://swapnil-css-cheatsheet.netlify.app"&gt;CSS Cheatsheet&lt;/a&gt;
+  &lt;li&gt;&lt;a href="https://swapnil-js-cheatsheet.netlify.app"&gt;JS Cheatsheet&lt;/a&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;CheatSheet for Progammer 2.0&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href="https://swapnil-git-cheatsheet.netlify.app"&gt;Git Cheatsheet&lt;/a&gt;
+  &lt;li&gt;&lt;a href="https://swapnil-html-cheatsheet.netlify.app"&gt;HTML Cheatsheet&lt;/a&gt;
+  &lt;li&gt;&lt;a href="https://swapnil-css-cheatsheet.netlify.app"&gt;CSS Cheatsheet&lt;/a&gt;
+  &lt;li&gt;&lt;a href="https://swapnil-js-cheatsheet.netlify.app"&gt;JS Cheatsheet&lt;/a&gt;
+&lt;/ol&gt;
+
+&lt;form action="thankyou.html" method="GET"&gt;
+  &lt;label for="name"&gt;Name&lt;/label&gt;
+  &lt;input type="text" name="name"&gt;
+  &lt;label for="password"&gt;Password&lt;/label&gt;
+  &lt;input type="password" name="password"&gt;
+&lt;/form&gt;</code></pre>
+
+
+            <h3>1. Element Selectors</h3>
+            <pre class="language-css"><code>h1 {
+  color: red;
+}</code></pre>
+            <h3>2. ID Selectors</h3>
+            <pre class="language-css"><code>#orange {
+  color: orange;
+}</code></pre>
+            <h3>3. Class Selectors</h3>
+            <pre class="language-css"><code>.blue {
+  color: blue;
+}</code></pre>
+            <h3>4. * Selectors</h3>
+            <pre class="language-css"><code>* {
+  font-weight: 400;
+}</code></pre>
+            <h3>5. Descentdant Selectors</h3>
+            <pre class="language-css"><code>body ul li a {
+  color:white;
+}
+
+ol li a {
+  color:white;
+}
+
+li a {
+  font-size: 18px;
+}
+
+li a {
+  text-decoration: none;
+}</code></pre>
+            <h3>6. Adjacent Selectors</h3>
+            <pre class="language-css"><code>h1 + a {
+  background:orange;
+}
+
+h2 + ul {
+  background: green;
+}
+
+h3 + ol {
+  background: blue;
+}
+
+li+a{
+  list-style: none;
+}</code></pre>
+
+            <h3>7. Attribute Selectors</h3>
+            <pre class="language-css"><code>a[href="https://swapnil-git-cheatsheet.netlify.app"]{
+  background-color: red;
+}
+
+input[type="password"] {
+  background-color: green;
+}
+
+input[name="name"] {
+  background-color: orange;
+}</code></pre>
+
+            <h3>8. nth-of-type Selectors</h3>
+            <pre class="language-css"><code>li:nth-of-type(even) {
+  background-color: black;
+}
+
+li:nth-of-type(1) {
+  list-style: none;
+}</code></pre>
+
+            <!-- CSS Font and Text -->
+            <h3>CSS Font and Text</h3>
+            <pre class="language-css"><code>element {
+  text-align: center;
+  text-decoration: underline;
+  font-family: Helvetica Neue;
+  font-weight: 500; /* we can use value of font weight in bold light or between 100-900 */
+  font-size: 22px; /* we can use value font size in pixel and em*/
+  line-height: 20px; /* we can use value of line hegiht in number of line and px*/
+}</code></pre>
+
+            <!-- How to use custom font in css -->
+            <h3>CSS : Use Custom Font</h3>
+            <pre class="language-html"><code>&lt;!-- Step 1. Visit Google Font Website --&gt;
+&lt;!-- Step 2. choice any font using filter and click on select style --&gt;
+&lt;!-- Step 3.now copy link code and paste it on head section of html file --&gt;
+&lt;head&gt;
+  &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+  &lt;link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"&gt;
+&lt;/head&gt;
+
+  &lt;!-- Step-4. copy css rules and add where you want to use this font --&gt;
+  element {
+  font-family: 'Patrick Hand', cursive;
+  }</code></pre>
+
+            <!-- CSS Box Model -->
+            <h3>CSS : Box Model [Content, Padding, Border, Margin ]</h3>
+            <pre class="language-css"><code>border-top:10px solid red;
+border-bottom:10px solid blue;
+border-left:10px solid green;
+border-right:10px solid orange;
+
+padding-top:50px;
+padding-bottom:50px;
+padding-left:50px;
+padding-right:50px;
+
+margin-top:50px;
+margin-bottom:50px;
+margin-left:50px;
+margin-right:50px;</code></pre>
+
+
+        </ol>
+
+        <script src="../cheatsheet/prism.js"></script>
+    </div>
+</body>
+
+</html>
